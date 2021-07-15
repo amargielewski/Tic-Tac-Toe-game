@@ -70,7 +70,11 @@ const playerHasWon = () => {
       return true;
     }
   }
-  if (spaces[7] === currentPlayer && spaces[6] === currentPlayer) {
+  if (
+    spaces[7] === currentPlayer &&
+    spaces[6] === currentPlayer &&
+    spaces[8] === currentPlayer
+  ) {
     console.log(`${currentPlayer} wins on the bottom`);
     return true;
   }
